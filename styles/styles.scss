@@ -1,4 +1,104 @@
+/* Farben */
+$light-orange: rgb(255, 197, 147);
+$magenta-pink: rgb(188, 113, 152);
+$light-blue: rgb(90, 119, 255);
+$pure-black: rgb(0, 0, 0);
+$light-grey: rgb(223, 223, 223);
+$pure-white: rgb(255, 255, 255);
+
+/* Schrift */
+$font: 'DM Sans', sans-serif;
+$font-bold: 700;
+$font-regular: 400;
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+    font-weight: $font-regular;
 }
+
+/* Schrift */
+body {
+    font-weight: $font-regular;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0;
+    //background-color: $pure-black;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 4.17px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: 0;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0;
+}
+
+h4 {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+}
+
+/* Buttons */
+button {
+    text-transform: uppercase;
+    border: none;
+    font-size: 12px;
+    font-weight: $font-bold;
+    line-height: auto;
+    letter-spacing: 2px;
+    
+}
+
+.button__letter--black {
+    color: $pure-black;
+    background-color: $pure-white;
+}
+
+.button__letter--white {
+    color: $pure-white;
+    background-color: $pure-black;
+}
+
+.button__letter--black:hover,
+.button__letter--black:focus,
+.button__letter--white:hover,
+.button__letter--white:focus {
+    text-decoration: underline;
+}
+
+.button--black {
+    color: $pure-white;
+    background-color: $pure-black;
+    width: 245px;
+    height: 40px;
+}
+
+.button--white {
+    color: $pure-black;
+    background-color: $pure-white;
+    width: 245px;
+    height: 40px;
+}
+
+.button--black:hover,
+.button--black:focus,
+.button--white:hover,
+.button--white:focus {
+    background-color: $light-grey;
+    color: $pure-black;
+}
+
