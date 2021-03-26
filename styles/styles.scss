@@ -26,6 +26,8 @@ body {
     line-height: 25px;
     letter-spacing: 0;
     //background-color: $pure-black;
+    width: 375px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -38,6 +40,7 @@ h2 {
     font-size: 24px;
     line-height: 25px;
     letter-spacing: 0;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -102,3 +105,9 @@ button {
     color: $pure-black;
 }
 
+
+/* Services */
+.services--black {
+    background-color: $pure-black;
+    color: $pure-white;
+}
