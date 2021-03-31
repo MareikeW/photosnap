@@ -12,7 +12,7 @@
 </head>
 <body>
   <header>
-    <div class="logo">PHOTOSNAP</div>
+    <img src="./assets/shared/desktop/logo.svg" alt="Logo Photosnap"  class="logo" />
     <nav>
       <li>Stories</li>
       <li>Features</li>
@@ -22,77 +22,118 @@
     <button class="button--black">Get an invite</button>
   </header>
 
-  <section>
-    <img src="./assets/home/mobile/create-and-share.jpg" alt="Mann mit Kamera steht auf einem Steg und schaut auf das Wasser hinaus.">
-  </section>
-
   <section class="services services--black">
-    <h2>Create and share your photo Stories</h2>
-    <p>Photosnap is a platform for photographers and visual storytellers. We make it 
-      easy to share photos, tell stories and connect with others.</p>
-    <button class="button__letter--white">Get an invite</button>
+    <div class="service__container">
+      <div class="service__images" id="service__image--top"></div>
+      <div class="service__text" id="service__text--top">
+        <h2>Create and share your photo Stories</h2>
+        <p>Photosnap is a platform for photographers and visual storytellers. We make it 
+          easy to share photos, tell stories and connect with others.</p>
+        <div class="service__button" id="service__button--short">
+          <button class="button__letter--white">Get an invite</button>
+          <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+        </div>
+      </div>
+    </div>
   </section>
   
   <section class="services">
-    <img src="./assets/home/mobile/beautiful-stories.jpg" alt="Geöffneter Laptop auf einem Schreibtisch.">
-    <h2>Beautiful stories every time</h2>
-    <p>We provide design templates to ensure your stories look terrific. Easily add 
-      photos, text, embed maps and media from other networks. Then share your story 
-      with everyone.</p>
-    <button class="button__letter--black">View the stories</button>
+    <div class="service--container">
+      <div class="service__images" id="service__image--middle"></div>
+      <div class="service__text">
+        <h2>Beautiful stories every time</h2>
+        <p>We provide design templates to ensure your stories look terrific. Easily add 
+          photos, text, embed maps and media from other networks. Then share your story 
+          with everyone.</p>
+        <div class="service__button">
+          <button class="button__letter--black">View the stories</button>
+          <img src="./assets/shared/desktop/arrow.svg" alt="Schwarzer Pfeil nach rechts.">
+        </div>
+      </div>
+    </div>
   </section>
   
   <section class="services">
-    <img src="./assets/home/mobile/designed-for-everyone.jpg" alt="Mann hinter Kamera.">
-    <h2>Designed for everyone</h2>
-    <p>Photosnap can help you create stories that resonate with your audience.  Our 
-      tool is designed for photographers of all levels, brands, businesses you name it. </p>
-    <button class="button__letter--black">View the stories</button>
+    <div class="service--container">
+      <div class="service__images" id="service__image--bottom"></div>
+      <div class="service__text">
+        <h2>Designed for everyone</h2>
+        <p>Photosnap can help you create stories that resonate with your audience.  Our 
+          tool is designed for photographers of all levels, brands, businesses you name it. </p>
+        <div class="service__button">
+          <button class="button__letter--black">View the stories</button>
+          <img src="./assets/shared/desktop/arrow.svg" alt="Schwarzer Pfeil nach rechts.">
+        </div>
+      </div>
+    </div>
   </section>
   
   <section class="stories__section">
     <div class="stories__container">
-      <div class="index__story">
-        <h3>The Mountains</h3>
-        <p>by John Appleseed</p>
-        <button class="button__letter--white">Read Story</button>
+      <div class="index__story" id="index__story--first">
+        <div class="story__text">
+          <h3>The Mountains</h3>
+          <p>by John Appleseed</p>
+          <div class="story__button">
+            <button class="button__letter--white">Read Story</button>
+            <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+          </div>
+        </div>
       </div>
 
-      <div class="index__story">
-        <h3>Sunset Cityscapes</h3>
-        <p>by Benjamin Cruz</p>
-        <button class="button__letter--white">Read Story</button>
+      <div class="index__story" id="index__story--second">
+        <div class="story__text">
+          <h3>Sunset Cityscapes</h3>
+          <p>by Benjamin Cruz</p>
+          <div class="story__button">
+            <button class="button__letter--white">Read Story</button>
+            <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+          </div>
+        </div>
       </div>
 
-      <div class="index__story">
-        <h3>18 Days Voyage</h3>
-        <p>by Alexei Borodin</p>
-        <button class="button__letter--white">Read Story</button>
+      <div class="index__story" id="index__story--third">
+        <div class="story__text">
+          <h3>18 Days Voyage</h3>
+          <p>by Alexei Borodin</p>
+          <div class="story__button">
+            <button class="button__letter--white">Read Story</button>
+            <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+          </div>
+        </div>
       </div>
 
-      <div class="index__story">
-        <h3>Architecturals</h3>
-        <p>by Samantha Brooke</p>
-        <button class="button__letter--white">Read Story</button>
+      <div class="index__story" id="index__story--fourth">
+        <div class="story__text">
+          <h3>Architecturals</h3>
+          <p>by Samantha Brooke</p>
+          <div class="story__button">
+            <button class="button__letter--white">Read Story</button>
+            <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+          </div>
+        </div>
       </div>
     </div>
   </section>
  
   <section>
-    <div>
-      <div>
+    <div class="homepage-features__container">
+      <div class="homepage-feature">
+        <img src="./assets/features/desktop/responsive.svg" alt="Icon for Responsiveness." class="feature--first">
         <h3>100% Responsive</h3>
         <p>No matter which the device you’re on, our site is fully responsive and stories 
           look beautiful on any screen.</p>
       </div>
 
-      <div>
+      <div class="homepage-feature">
+        <img src="./assets/features/desktop/no-limit.svg" alt="Icon for Infinity Loop.">
         <h3>No Photo Upload Limit</h3>
         <p>Our tool has no limits on uploads or bandwidth. Freely upload in bulk and 
           share all of your stories in one go.</p>
       </div>
 
-      <div>
+      <div class="homepage-feature">
+        <img src="./assets/features/desktop/embed.svg" alt="Icon for Embedding Media.">
         <h3>Available to Embed</h3>
         <p>Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, 
           Google Maps, and more.</p>
@@ -102,14 +143,25 @@
 
   <footer>
     <div class="footer__container">
-      <ul>
+      <img src="./assets/shared/desktop/logo.svg" alt="Logo Photosnap"  id="logo--white" />
+      <ul class="footer__icons">
+        <li><img src="./assets/shared/desktop/facebook.svg" alt="Facebook Icon"></li>
+        <li><img src="./assets/shared/desktop/youtube.svg" alt="Youtube Icon"></li>
+        <li><img src="./assets/shared/desktop/twitter.svg" alt="Twitter Icon"></li>
+        <li><img src="./assets/shared/desktop/pinterest.svg" alt="Pinterest Icon"></li>
+        <li><img src="./assets/shared/desktop/instagram.svg" alt="Instagram Icon"></li>
+      </ul>
+      <ul class="footer__pages">
         <li>Home</li>
         <li>Stories</li>
         <li>Features</li>
         <li>Pricing</li>
       </ul>
 
-      <button class="button__letter--white">Get an invite</button>
+      <div class="footer__button">
+        <button class="button__letter--white">Get an invite</button>
+        <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+      </div>
       <p>Copyright 2019. All Rights Reserved</p>
     </div>
   </footer>

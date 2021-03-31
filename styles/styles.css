@@ -1,5 +1,5 @@
-/* Farben */
-/* Schrift */
+/* COLOURS */
+/* FONT */
 * {
   margin: 0;
   padding: 0;
@@ -9,14 +9,12 @@
   font-weight: 400;
 }
 
-/* Schrift */
+/* TYPOGRAPHY */
 body {
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
   letter-spacing: 0;
-  width: 375px;
-  margin: 0 auto;
 }
 
 h1 {
@@ -26,10 +24,11 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
-  line-height: 25px;
-  letter-spacing: 0;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 3.33px;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 h3 {
@@ -44,7 +43,11 @@ h4 {
   letter-spacing: 2px;
 }
 
-/* Buttons */
+ul {
+  list-style: none;
+}
+
+/* BUTTONS */
 button {
   text-transform: uppercase;
   border: none;
@@ -93,9 +96,232 @@ button {
   color: black;
 }
 
-/* Services */
+.arrow--white {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+/* SERVICE SECTION - HOMEPAGE */
 .services--black {
   background-color: black;
+  color: white;
+}
+
+.service__images {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 271px;
+}
+
+#service__image--top {
+  background-image: url("../assets/home/mobile/create-and-share.jpg");
+  height: 294px;
+}
+
+#service__image--middle {
+  background-image: url("../assets/home/mobile/beautiful-stories.jpg");
+}
+
+#service__image--bottom {
+  background-image: url("../assets/home/mobile/designed-for-everyone.jpg");
+}
+
+.service__text {
+  max-width: 318px;
+  margin: 0 auto;
+  padding: 10px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+@media (min-width: 375px) {
+  .service__text {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.service__text h2 {
+  margin-bottom: 16px;
+}
+
+.service__text p {
+  margin-bottom: 23px;
+  color: black;
+  opacity: 0.5;
+}
+
+.service__text .service__button {
+  width: 205px;
+  height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.service__text #service__button--short {
+  width: 168px;
+}
+
+.service__text img {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  width: 42px;
+}
+
+#service__text--top p {
+  color: white;
+}
+
+/* STORIES SECTION - HOMEPAGE */
+.index__story {
+  height: 375px;
+  width: 375px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#index__story--first {
+  background-image: url(../assets/stories/mobile/mountains.jpg);
+}
+
+#index__story--second {
+  background-image: url(../assets/stories/mobile/cityscapes.jpg);
+}
+
+#index__story--third {
+  background-image: url(../assets/stories/mobile/18-days-voyage.jpg);
+}
+
+#index__story--fourth {
+  background-image: url(../assets/stories/mobile/architecturals.jpg);
+}
+
+.story__text {
+  color: white;
+  width: 310px;
+  height: 99px;
+  position: absolute;
+  bottom: 40px;
+  left: 33px;
+}
+
+.story__text p {
+  font-size: 13px;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.25);
+  padding-bottom: 17px;
+}
+
+.story__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+}
+
+.story__button .button__letter--white {
+  background-color: unset;
+}
+
+/* FEATURES LISTING - HOMEPAGE */
+.homepage-features__container {
+  width: 310px;
+  height: 802px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.homepage-feature img {
+  margin-bottom: 48px;
+  margin-top: 56px;
+}
+
+.homepage-feature .feature--first {
+  margin-top: 0;
+}
+
+.homepage-feature h3 {
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.homepage-feature p {
+  opacity: 0.6;
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+  text-align: center;
+  height: 539px;
+}
+
+footer .footer__container {
+  height: 427px;
+  width: 310px;
+  padding-top: 56px;
+  margin: 0 auto;
+}
+
+footer .footer__icons,
+footer #logo--white {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+footer .footer__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 154px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 32px;
+}
+
+footer .footer__pages {
+  color: white;
+  text-transform: uppercase;
+  margin-top: 49px;
+  height: 121px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+footer .footer__button {
+  width: 172px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 119px;
+  padding-bottom: 34px;
+}
+
+footer p {
+  opacity: 0.6;
   color: white;
 }
 /*# sourceMappingURL=styles.css.map */
