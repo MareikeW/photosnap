@@ -5,122 +5,260 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Photosnap Website Challenge</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Stories</title>
 </head>
 <body>
+  <header>
+    <img src="./assets/shared/desktop/logo.svg" alt="Logo Photosnap"  class="logo" />
+    <nav>
+      <li>Stories</li>
+      <li>Features</li>
+      <li>Pricing</li>
+    </nav>
 
-  Stories
-  Features
-  Pricing
+    <button class="button--black">Get an invite</button>
+  </header>
 
-  Get an invite
+  <section class="hero__section">
+    <div class="featured__story"></div>
+    <div class="hero__text">
+      <h4>Last month's featured story</h4>
+      <h2>Hazy full moon of Appalachia</h2>
+      <h3><span>March 2nd 2020</span> by John Appleseed</h3>
+      <p>The dissected plateau area, while not actually made up of geological mountains, 
+        is popularly called "mountains," especially in eastern Kentucky and West Virginia, 
+        and while the ridges are not high, the terrain is extremely rugged.</p>
+      <div class="service__button" id="service__button--short">
+        <button class="button__letter--white">Read the story</button>
+        <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+      </div>
+    </div>
+  </section>
+  
 
-  Last month's featured story
+  <section class="stories__section">
+    <div class="stories__container">
+      <div class="index__story stories_story" id="story--first">
+        <div class="story__text">
+          <h4>April 16th 2020</h4>
+          <h3>The Mountains</h3>
+          <h5>by John Appleseed</h5>
+          <div class="story__button">
+            <button class="button__letter--white">Read Story</button>
+            <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+          </div>
+        </div>
+      </div>
 
-  Hazy full moon of Appalachia
-  March 2nd 2020
-  by John Appleseed
+      <div class="story stories_story" id="story--second">
+        <div class="story__text">
+          <h4>April 14th 2020</h4>
+          <h3>Sunset Cityscapes</h3>
+          <h5>by Benjamin Cruz</h5>
+          <div class="story__button">
+            <button class="button__letter--white">Read Story</button>
+            <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+          </div>
+        </div>
+      </div>
 
-  The dissected plateau area, while not actually made up of geological mountains, 
-  is popularly called "mountains," especially in eastern Kentucky and West Virginia, 
-  and while the ridges are not high, the terrain is extremely rugged.
+      <div class="index__story stories_story" id="story--third">
+        <div class="story__text">
+          <h4>April 11th 2020</h4>
+          <h3>18 Days Voyage</h3>
+          <h5>by Alexei Borodin</h5>
+          <div class="story__button">
+            <button class="button__letter--white">Read Story</button>
+            <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+          </div>
+        </div>
+      </div>
 
-  Read the story
+      <div class="index__story stories_story" id="story--fourth">
+        <div class="story__text">
+          <h4>April 9th 2020</h4>
+          <h3>Architecturals</h3>
+          <h5>by Samantha Brooke</h5>
+          <div class="story__button">
+            <button class="button__letter--white">Read Story</button>
+            <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+          </div>
+        </div>
+      </div>
+    </div>
 
-  April 16th 2020
-  The Mountains
-  by John Appleseed
-  Read Story
+    <div class="index__story stories_story" id="story--fifth">
+      <div class="story__text">
+        <h4>April 7th 2020</h4>
+        <h3>World Tour 2019</h3>
+        <h5>by Timothy Wagner</h5>
+        <div class="story__button">
+          <button class="button__letter--white">Read Story</button>
+          <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+        </div>
+      </div>
+    </div>
 
-  April 14th 2020
-  Sunset Cityscapes
-  by Benjamin Cruz
-  Read Story
+    <div class="index__story stories_story" id="story--sixth">
+      <div class="story__text">
+        <h4>April 3rd 2020</h4>
+        <h3>Unforeseen Corners</h3>
+        <h5>by William Malcolm</h5>
+        <div class="story__button">
+          <button class="button__letter--white">Read Story</button>
+          <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+        </div>
+      </div>
+    </div>
 
-  April 11th 2020
-  18 Days Voyage
-  by Alexei Borodin
-  Read Story
+    <div class="index__story stories_story" id="story--seventh">
+      <div class="story__text">
+        <h4>March 29th 2020</h4>
+        <h3>King on Africa: Part II</h3>
+        <h5>by Tim Hillenburg</h5>
+        <div class="story__button">
+          <button class="button__letter--white">Read Story</button>
+          <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+        </div>
+      </div>
+    </div>
 
-  April 9th 2020
-  Architecturals
-  by Samantha Brooke
-  Read Story
+    <div class="index__story stories_story" id="story--eighth">
+      <div class="story__text">
+        <h4>March 21th 2020</h4>
+        <h3>The Trip to Nowhere</h3>
+        <h5>by Felicia Rourke</h5>
+        <div class="story__button">
+          <button class="button__letter--white">Read Story</button>
+          <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+        </div>
+      </div>
+    </div>
 
-  April 7th 2020
-  World Tour 2019
-  by Timothy Wagner
-  Read Story
+    <div class="index__story stories_story" id="story--ninth">
+      <div class="story__text">
+        <h4>March 19th 2020</h4>
+        <h3>Rage of The Sea</h3>
+        <h5>by Mohammed Abdul</h5>
+        <div class="story__button">
+          <button class="button__letter--white">Read Story</button>
+          <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+        </div>
+      </div>
+    </div>
 
-  April 7th 2020
-  World Tour 2019
-  by Timothy Wagner
-  Read Story
+    <div class="index__story stories_story" id="story--tenth">
+      <div class="story__text">
+        <h4>March 16th 2020</h4>
+        <h3>Running Free</h3>
+        <h5>by Michelle</h5>
+        <div class="story__button">
+          <button class="button__letter--white">Read Story</button>
+          <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+        </div>
+      </div>
+    </div>
 
-  April 3rd 2020
-  Unforeseen Corners
-  by William Malcolm
-  Read Story
+    <div class="index__story stories_story" id="story--eleventh">
+      <div class="story__text">
+        <h4>March 11th 2020</h4>
+        <h3>Behind the Waves</h3>
+        <h5>by Lamarr Wilson</h5>
+        <div class="story__button">
+          <button class="button__letter--white">Read Story</button>
+          <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+        </div>
+      </div>
+    </div>
 
-  March 29th 2020
-  King on Africa: Part II
-  by Tim Hillenburg
-  Read Story
+    <div class="index__story stories_story" id="story--twelfth">
+      <div class="story__text">
+        <h4>March 9th 2020</h4>
+        <h3>Calm Waters</h3>
+        <h5>by Samantha Brooke</h5>
+        <div class="story__button">
+          <button class="button__letter--white">Read Story</button>
+          <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+        </div>
+      </div>
+    </div>
 
-  March 21st 2020
-  The Trip to Nowhere
-  by Felicia Rourke
-  Read Story
+    <div class="index__story stories_story" id="story--thirteenth">
+      <div class="story__text">
+        <h4>March 5th 2020</h4>
+        <h3>The Milky Way</h3>
+        <h5>by Benjamin Cruz</h5>
+        <div class="story__button">
+          <button class="button__letter--white">Read Story</button>
+          <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+        </div>
+      </div>
+    </div>
 
-  March 19th 2020
-  Rage of The Sea
-  by Mohammed Abdul
-  Read Story
+    <div class="index__story stories_story" id="story--fourteenth">
+      <div class="story__text">
+        <h4>March 4th 2020</h4>
+        <h3>Night of The Dark Forest</h3>
+        <h5>by Mohammed Abdul</h5>
+        <div class="story__button">
+          <button class="button__letter--white">Read Story</button>
+          <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+        </div>
+      </div>
+    </div>
 
-  March 16th 2020
-  Running Free
-  by Michelle
-  Read Story
+    <div class="index__story stories_story" id="story--fifteenth">
+      <div class="story__text">
+        <h4>March 1st 2020</h4>
+        <h3>Somwarpet's Beauty</h3>
+        <h5>by Michelle</h5>
+        <div class="story__button">
+          <button class="button__letter--white">Read Story</button>
+          <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+        </div>
+      </div>
+    </div>
 
-  March 11th 2020
-  Behind the Waves
-  by Lamarr Wilson
-  Read Story
+    <div class="index__story stories_story" id="story--sixteenth">
+      <div class="story__text">
+        <h4>February 25th 2020</h4>
+        <h3>Land of Dreams</h3>
+        <h5>by William Malcolm</h5>
+        <div class="story__button">
+          <button class="button__letter--white">Read Story</button>
+          <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <footer>
+    <div class="footer__container">
+      <img src="./assets/shared/desktop/logo.svg" alt="Logo Photosnap"  id="logo--white" />
+      <ul class="footer__icons">
+        <li><img src="./assets/shared/desktop/facebook.svg" alt="Facebook Icon"></li>
+        <li><img src="./assets/shared/desktop/youtube.svg" alt="Youtube Icon"></li>
+        <li><img src="./assets/shared/desktop/twitter.svg" alt="Twitter Icon"></li>
+        <li><img src="./assets/shared/desktop/pinterest.svg" alt="Pinterest Icon"></li>
+        <li><img src="./assets/shared/desktop/instagram.svg" alt="Instagram Icon"></li>
+      </ul>
+      <ul class="footer__pages">
+        <li>Home</li>
+        <li>Stories</li>
+        <li>Features</li>
+        <li>Pricing</li>
+      </ul>
 
-  March 9th 2020
-  Calm Waters
-  by Samantha Brooke
-  Read Story
-
-  March 5th 2020
-  The Milky Way
-  by Benjamin Cruz
-  Read Story
-
-  March 4th 2020
-  Night at The Dark Forest
-  by  Mohammed Abdul
-  Read Story
-
-  March 1st 2020
-  Somwarpet’s Beauty
-  by Michelle
-  Read Story
-
-  February 25th 2020
-  Land of Dreams
-  by William Malcolm
-  Read Story
-
-  Home
-  Stories
-  Features
-  Pricing
-
-  Get an invite
-
-  Copyright 2019. All Rights Reserved
-
+      <div class="footer__button">
+        <button class="button__letter--white">Get an invite</button>
+        <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+      </div>
+      <p>Copyright 2019. All Rights Reserved</p>
+    </div>
+  </footer>
 </body>
 </html>

@@ -18,6 +18,7 @@ $font-regular: 400;
     box-sizing: border-box;
     font-family: $font;
     font-weight: $font-regular;
+    background-repeat: no-repeat;
 }
 
 /* TYPOGRAPHY */
@@ -115,15 +116,56 @@ button {
     filter: invert(100%);
 }
 
-
-/* SERVICE SECTION - HOMEPAGE */
-.services--black {
+/* GENERAL LAYOUT */
+.hero__section {
     background-color: $pure-black;
     color: $pure-white;
 }
 
+.hero__section {
+    p {
+        color:rgba(255, 255, 255, 0.6);
+    }
+
+    h4 {
+        text-transform: uppercase;
+    }
+
+    h2 {
+        margin: 16px 0;
+    }
+
+    h3 {
+        font-size: 13px;
+        margin-bottom: 24px;
+    }
+
+    span {
+        color:rgba(255, 255, 255, 0.75);
+        padding-right: 10px;
+    }
+}
+
+.service__text,
+.hero__text {
+    width: 318px;
+    margin: 0 auto;
+    padding: 10px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+@media (min-width: 375px) {
+    .service__text,
+    .hero__text {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+/* SERVICE SECTION - HOMEPAGE */
 .service__images {
-    background-repeat: no-repeat;
     background-size: cover;
     height: 271px;
 }
@@ -141,18 +183,11 @@ button {
     background-image: url("../assets/home/mobile/designed-for-everyone.jpg");
 }
 
-.service__text {
-    max-width: 318px;
-    margin: 0 auto;
-    padding: 10px;
-    padding-top: 72px;
-    padding-bottom: 72px;
-}
-
-@media (min-width: 375px) {
-    .service__text {
-        padding-left: 0;
-        padding-right: 0;
+.service__container {
+    .service__text,
+    .hero__text {
+        padding-top: 72px;
+        padding-bottom: 72px;
     }
 }
 
@@ -185,37 +220,78 @@ button {
     }
 }
 
-#service__text--top  {
-    p {
-        color: $pure-white;
-    }
-}
-
-
 
 /* STORIES SECTION - HOMEPAGE */
-.index__story {
+.index__story,
+.stories_story {
     height: 375px;
     width: 375px;
     margin: 0 auto;
-    background-repeat: no-repeat;
     position: relative;
 }
 
-#index__story--first {
+#story--first {
     background-image: url(../assets/stories/mobile/mountains.jpg);
 }
 
-#index__story--second {
+#story--second {
     background-image: url(../assets/stories/mobile/cityscapes.jpg);
 }
 
-#index__story--third {
+#story--third {
     background-image: url(../assets/stories/mobile/18-days-voyage.jpg);
 }
 
-#index__story--fourth {
+#story--fourth {
     background-image: url(../assets/stories/mobile/architecturals.jpg);
+}
+
+#story--fifth {
+    background-image: url(../assets/stories/mobile/world-tour.jpg);
+}
+
+#story--sixth {
+    background-image: url(../assets/stories/mobile/unforeseen-corners.jpg);
+}
+
+#story--seventh {
+    background-image: url(../assets/stories/mobile/king-on-africa.jpg);
+}
+
+#story--eighth {
+    background-image: url(../assets/stories/mobile/trip-to-nowhere.jpg);
+}
+
+#story--ninth {
+    background-image: url(../assets/stories/mobile/rage-of-the-sea.jpg);
+}
+
+#story--tenth {
+    background-image: url(../assets/stories/mobile/running-free.jpg);
+}
+
+#story--eleventh {
+    background-image: url(../assets/stories/mobile/behind-the-waves.jpg);
+}
+
+#story--twelfth {
+    background-image: url(../assets/stories/mobile/calm-waters.jpg);
+}
+
+#story--thirteenth {
+    background-image: url(../assets/stories/mobile/milky-way.jpg);
+}
+
+#story--fourteenth {
+    background-image: url(../assets/stories/mobile/dark-forest.jpg);
+}
+
+#story--fifteenth {
+    background-image: url(../assets/stories/mobile/somwarpet.jpg);
+}
+
+#story--sixteenth {
+    background-image: url(../assets/stories/mobile/land-of-dreams.jpg);
 }
 
 .story__text {
@@ -228,10 +304,19 @@ button {
 }
 
 .story__text {
-    p {
+    h4,
+    h5 {
         font-size: 13px;
+    }
+
+    h5 {
         border-bottom: solid 1px $transparent-white;
         padding-bottom: 17px;
+    }
+
+    h4 {
+        padding-bottom: 4px;
+        letter-spacing: 0;
     }
 }
 
@@ -330,6 +415,31 @@ footer {
     p {
         opacity: 0.6;
         color: $pure-white;
+    }
+}
+
+
+
+
+
+/* STORIES PAGE */
+.featured__story {
+    background-image: url("../assets/stories/mobile/moon-of-appalacia.jpg");
+    height: 317px;
+    background-size: cover;
+}
+
+
+.stories_story {
+    .story__text {
+        bottom: 60px;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0;
+        font-weight: $font-bold;
     }
 }
 
