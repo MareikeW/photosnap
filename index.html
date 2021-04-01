@@ -12,18 +12,21 @@
 </head>
 <body>
   <header>
-    <img src="./assets/shared/desktop/logo.svg" alt="Logo Photosnap"  class="logo" />
-    <nav>
-      <li>Stories</li>
-      <li>Features</li>
-      <li>Pricing</li>
-    </nav>
+    <div class="header__container">
+      <img src="./assets/shared/desktop/logo.svg" alt="Logo Photosnap"  class="logo" />
+      <!--<nav>
+        <li>Stories</li>
+        <li>Features</li>
+        <li>Pricing</li>
+      </nav>
 
-    <button class="button--black">Get an invite</button>
+      <button class="button--black">Get an invite</button>-->
+      <img class="menu-button" src="./assets/shared/mobile/menu.svg" alt="Navigationmenu">
+    </div>
   </header>
 
-  <section class="services hero__section">
-    <div class="service__container">
+  <section class="service__section">
+    <div class="service__container hero__section">
       <div class="service__images" id="service__image--top"></div>
       <div class="hero__text" id="service__text--top">
         <h2>Create and share your photo Stories</h2>
@@ -35,13 +38,13 @@
         </div>
       </div>
     </div>
-  </section>
   
-  <section class="services">
+  
+  
     <div class="service__container">
       <div class="service__images" id="service__image--middle"></div>
-      <div class="service__text">
-        <h2>Beautiful stories every time</h2>
+      <div class="service__text" id="service__text--middle">
+        <h2>Beautiful stories <br> every time</h2>
         <p>We provide design templates to ensure your stories look terrific. Easily add 
           photos, text, embed maps and media from other networks. Then share your story 
           with everyone.</p>
@@ -51,12 +54,10 @@
         </div>
       </div>
     </div>
-  </section>
   
-  <section class="services">
     <div class="service__container">
       <div class="service__images" id="service__image--bottom"></div>
-      <div class="service__text">
+      <div class="service__text" id="service__text--bottom">
         <h2>Designed for everyone</h2>
         <p>Photosnap can help you create stories that resonate with your audience.  Our 
           tool is designed for photographers of all levels, brands, businesses you name it. </p>
@@ -73,7 +74,7 @@
       <div class="index__story" id="story--first">
         <div class="story__text">
           <h3>The Mountains</h3>
-          <p>by John Appleseed</p>
+          <h5>by John Appleseed</h5>
           <div class="story__button">
             <button class="button__letter--white">Read Story</button>
             <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
@@ -84,7 +85,7 @@
       <div class="index__story" id="story--second">
         <div class="story__text">
           <h3>Sunset Cityscapes</h3>
-          <p>by Benjamin Cruz</p>
+          <h5>by Benjamin Cruz</h5>
           <div class="story__button">
             <button class="button__letter--white">Read Story</button>
             <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
@@ -95,7 +96,7 @@
       <div class="index__story" id="story--third">
         <div class="story__text">
           <h3>18 Days Voyage</h3>
-          <p>by Alexei Borodin</p>
+          <h5>by Alexei Borodin</h5>
           <div class="story__button">
             <button class="button__letter--white">Read Story</button>
             <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
@@ -106,7 +107,7 @@
       <div class="index__story" id="story--fourth">
         <div class="story__text">
           <h3>Architecturals</h3>
-          <p>by Samantha Brooke</p>
+          <h5>by Samantha Brooke</h5>
           <div class="story__button">
             <button class="button__letter--white">Read Story</button>
             <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
@@ -118,21 +119,21 @@
  
   <section>
     <div class="features__container">
-      <div class="homepage-feature">
+      <div class="features">
         <img src="./assets/features/desktop/responsive.svg" alt="Icon for Responsiveness." class="feature--first">
         <h3>100% Responsive</h3>
         <p>No matter which the device you’re on, our site is fully responsive and stories 
           look beautiful on any screen.</p>
       </div>
 
-      <div class="homepage-feature">
+      <div class="features">
         <img src="./assets/features/desktop/no-limit.svg" alt="Icon for Infinity Loop.">
         <h3>No Photo Upload Limit</h3>
         <p>Our tool has no limits on uploads or bandwidth. Freely upload in bulk and 
           share all of your stories in one go.</p>
       </div>
 
-      <div class="homepage-feature">
+      <div class="features">
         <img src="./assets/features/desktop/embed.svg" alt="Icon for Embedding Media.">
         <h3>Available to Embed</h3>
         <p>Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, 

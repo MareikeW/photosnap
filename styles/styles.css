@@ -102,7 +102,42 @@ button {
           filter: invert(100%);
 }
 
+.invite__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 168px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 /* GENERAL LAYOUT */
+header {
+  height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 331px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .menu-button {
+  height: 6px;
+}
+
 .hero__section {
   background-color: black;
   color: white;
@@ -134,9 +169,12 @@ button {
 .hero__text {
   width: 318px;
   margin: 0 auto;
-  padding: 10px;
   padding-top: 48px;
   padding-bottom: 48px;
+}
+
+.hero__text .invite__button {
+  margin-top: 23px;
 }
 
 @media (min-width: 375px) {
@@ -164,20 +202,12 @@ button {
   margin-bottom: 24px;
 }
 
-.announcement__section .invite__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 168px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 /* SERVICE SECTION - HOMEPAGE */
 .service__images {
   background-size: cover;
   height: 271px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 #service__image--top {
@@ -206,7 +236,7 @@ button {
 .service__text p {
   margin-bottom: 23px;
   color: black;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .service__text .service__button {
@@ -225,6 +255,102 @@ button {
   width: 42px;
 }
 
+@media (min-width: 768px) {
+  .service__container {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "textHero textHero imgHero" "img2 text2 text2" "text3 text3 img3";
+    grid-auto-columns: 1fr 1fr 1fr;
+    height: 600px;
+  }
+  .hero__section {
+    height: 650px;
+  }
+  #service__text--top {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: textHero;
+    padding: 0;
+    margin-top: 173px;
+  }
+  #service__text--middle {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: text2;
+    padding: 0;
+    margin-top: 136px;
+  }
+  #service__text--bottom {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: text3;
+    padding: 0;
+    margin-top: 136px;
+  }
+  .service__images {
+    height: 600px;
+    min-width: 100%;
+  }
+  #service__image--top {
+    background-image: url("../assets/home/tablet/create-and-share.jpg");
+    height: 650px;
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: imgHero;
+    margin: 0;
+  }
+  #service__image--middle {
+    background-image: url("../assets/home/tablet/beautiful-stories.jpg");
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: img2;
+  }
+  #service__image--bottom {
+    background-image: url("../assets/home/tablet/designed-for-everyone.jpg");
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: img3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .service__container {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "textHero imgHero" "img2 text2" "text3 img3";
+    grid-auto-columns: 42% 58%;
+  }
+  .service__container:nth-child(2) {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "img2 text2";
+    grid-auto-columns: 58% 42%;
+  }
+  #service__image--top {
+    background-image: url("../assets/home/desktop/create-and-share.jpg");
+    height: 650px;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: imgHero;
+    margin: 0;
+  }
+  #service__image--middle {
+    background-image: url("../assets/home/desktop/beautiful-stories.jpg");
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: img2;
+  }
+  #service__image--bottom {
+    background-image: url("../assets/home/desktop/designed-for-everyone.jpg");
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: img3;
+  }
+}
+
 /* STORIES SECTION - HOMEPAGE */
 .index__story,
 .stories_story {
@@ -232,6 +358,17 @@ button {
   width: 375px;
   margin: 0 auto;
   position: relative;
+}
+
+.index__story::before,
+.stories__story::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 #story--first {
@@ -332,6 +469,87 @@ button {
   padding-top: 20px;
 }
 
+@media (min-width: 768px) {
+  .stories__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    width: 720px;
+    margin: 0 auto;
+  }
+  .index__story {
+    height: 500px;
+    width: 100%;
+  }
+  #story--first {
+    background-image: url(../assets/stories/desktop/mountains.jpg);
+  }
+  #story--second {
+    background-image: url(../assets/stories/desktop/cityscapes.jpg);
+  }
+  #story--third {
+    background-image: url(../assets/stories/desktop/18-days-voyage.jpg);
+  }
+  #story--fourth {
+    background-image: url(../assets/stories/desktop/architecturals.jpg);
+  }
+  #story--fifth {
+    background-image: url(../assets/stories/desktop/world-tour.jpg);
+  }
+  #story--sixth {
+    background-image: url(../assets/stories/desktop/unforeseen-corners.jpg);
+  }
+  #story--seventh {
+    background-image: url(../assets/stories/desktop/king-on-africa.jpg);
+  }
+  #story--eighth {
+    background-image: url(../assets/stories/desktop/trip-to-nowhere.jpg);
+  }
+  #story--ninth {
+    background-image: url(../assets/stories/desktop/rage-of-the-sea.jpg);
+  }
+  #story--tenth {
+    background-image: url(../assets/stories/desktop/running-free.jpg);
+  }
+  #story--eleventh {
+    background-image: url(../assets/stories/desktop/behind-the-waves.jpg);
+  }
+  #story--twelfth {
+    background-image: url(../assets/stories/desktop/calm-waters.jpg);
+  }
+  #story--thirteenth {
+    background-image: url(../assets/stories/desktop/milky-way.jpg);
+  }
+  #story--fourteenth {
+    background-image: url(../assets/stories/desktop/dark-forest.jpg);
+  }
+  #story--fifteenth {
+    background-image: url(../assets/stories/desktop/somwarpet.jpg);
+  }
+  #story--sixteenth {
+    background-image: url(../assets/stories/desktop/land-of-dreams.jpg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .stories__container {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: auto;
+  }
+  .index__story {
+    max-height: 500px;
+    max-width: 360px;
+  }
+}
+
+@media (min-width: 1294px) {
+  .stories__container {
+    max-width: 1440px;
+  }
+}
+
 /* FEATURES LISTING - HOMEPAGE */
 .features__container {
   width: 310px;
@@ -354,8 +572,64 @@ button {
   font-weight: 700;
 }
 
+.features .features:nth-child(2) img {
+  margin-bottom: 66px;
+}
+
 .features p {
   opacity: 0.6;
+}
+
+@media (min-width: 768px) {
+  .features__container {
+    width: 457px;
+    margin: 120px auto;
+    text-align: center;
+  }
+  .features img {
+    margin-top: 80px;
+  }
+  .features:nth-child(2) img {
+    margin-bottom: 66px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .features__container {
+    height: 236px;
+    width: 1000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .features {
+    width: 300px;
+    height: 236px;
+  }
+  .features:nth-child(2) {
+    padding-top: 18px;
+  }
+  .features:nth-child(2) img {
+    margin-bottom: 66px;
+  }
+  .features img {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .features__container {
+    width: 1110px;
+  }
+  .features {
+    width: 350px;
+  }
 }
 
 /* FOOTER */
