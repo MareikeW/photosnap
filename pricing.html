@@ -5,44 +5,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Photosnap Website Challenge</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Pricing</title>
 </head>
 <body>
 
-  Stories
-  Features
-  Pricing
+  <header>
+    <img src="./assets/shared/desktop/logo.svg" alt="Logo Photosnap"  class="logo" />
+    <nav>
+      <li>Stories</li>
+      <li>Features</li>
+      <li>Pricing</li>
+    </nav>
 
-  Get an invite
+    <button class="button--black">Get an invite</button>
+  </header>
 
-  Pricing
+  <section class="hero__section">
+      <div class="hero-pricing__image"></div>
+      <div class="hero__text featured__text">
+        <h2>Pricing</h2>
+        <p>Create a your stories, Photosnap is a platform for photographers and visual storytellers. 
+          It’s the simple way to create and share your photos.</p>
+    </div>
+  </section>
 
-  Create a your stories, Photosnap is a platform for photographers and visual storytellers. 
-  It’s the simple way to create and share your photos.
+  <section class="pricing-cards__section">
+    <div class="toggler__container">
+      <div class="toggler__button">
+        <span>Monthly</span>
+        <label class="toggle">
+          <input type="checkbox" id="checkbox" onclick="switchPricingTerm()">
+          
+        </label>
+        <span>Yearly</span>
+      </div>
+    </div>
 
-  Monthly
-  Yearly
+    <div class="pricing-cards__container">
+      <div class="pricing__cards">
+        <div class="pricing-card__text">
+          <h3>Basic</h2>
+          <p>Includes basic usage of our platform. Recommended for new and aspiring photographers.</p>
+        </div>
+        <div class="pricing-card__price">
+          <h2>$19.00</h3>
+          <p>per month</p>
+          <!--<h3>$190.00</h3>
+          <p>per year</p>-->
+        </div>
+        <div class="pick-plan__button">
+          <button class="button--black">Pick Plan</button>
+        </div>
+      </div>
 
-  Basic
-  Includes basic usage of our platform. Recommended for new and aspiring photographers.
-  $19.00 per month
-  $190.00 per year
-  Pick Plan
+      <div class="pricing__cards">
+        <div class="pricing-card__text">
+          <h3>Pro</h2>
+          <p>More advanced features available. Recommended for photography veterans and professionals.</p>
+        </div>
+        <div class="pricing-card__price">
+          <h2>$39.00</h3>
+          <p>per month</p>
+          <!--<h3>$390.00</h3>
+          <p>per year</p>-->
+        </div>
+        <div class="pick-plan__button">
+          <button class="button--white">Pick Plan</button>
+        </div>
+      </div>
 
-  Pro
-  More advanced features available. Recommended for photography veterans and professionals.
-  $39.00 per month
-  $390.00 per year
-  Pick Plan
+      <div class="pricing__cards">
+        <div class="pricing-card__text">
+          <h3>Business</h2>
+          <p>Additional features available such as more detailed metrics. Recommended for business owners.</p>
+        </div>
+        <div class="pricing-card__price">
+          <h2>$99.00</h3>
+          <p>per month</p>
+          <!--<h3>$990.00</h3>
+          <p>per year</p>-->
+        </div>
+        <div class="pick-plan__button">
+          <button class="button--black">Pick Plan</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  Business
-  Additional features available such as more detailed metrics. Recommended for business owners.
-  $99.00 per month
-  $990.00 per year
-  Pick Plan
-
-  Compare
+  <!--Compare-->
 
   The Features
 
@@ -59,18 +112,39 @@
   Search Engine Indexing
   Custom Analytics
 
-  We're in Beta. Get your invite today!
-  
-  Get an invite
+  <section class="announcement__section">
+    <div class="announcement__text">
+      <h2>We're in Beta. Get your invite today!</h2>
+      <div class="invite__button" id="invite__button--short">
+        <button class="button__letter--white">Get an invite</button>
+        <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+      </div>
+    </div>
+  </section>
 
-  Home
-  Stories
-  Features
-  Pricing
+  <footer>
+    <div class="footer__container">
+      <img src="./assets/shared/desktop/logo.svg" alt="Logo Photosnap"  id="logo--white" />
+      <ul class="footer__icons">
+        <li><img src="./assets/shared/desktop/facebook.svg" alt="Facebook Icon"></li>
+        <li><img src="./assets/shared/desktop/youtube.svg" alt="Youtube Icon"></li>
+        <li><img src="./assets/shared/desktop/twitter.svg" alt="Twitter Icon"></li>
+        <li><img src="./assets/shared/desktop/pinterest.svg" alt="Pinterest Icon"></li>
+        <li><img src="./assets/shared/desktop/instagram.svg" alt="Instagram Icon"></li>
+      </ul>
+      <ul class="footer__pages">
+        <li>Home</li>
+        <li>Stories</li>
+        <li>Features</li>
+        <li>Pricing</li>
+      </ul>
 
-  Get an invite
-
-  Copyright 2019. All Rights Reserved
-
+      <div class="footer__button">
+        <button class="button__letter--white">Get an invite</button>
+        <img src="./assets/shared/desktop/arrow.svg" alt="Weißer Pfeil nach rechts." class="arrow--white">
+      </div>
+      <p>Copyright 2019. All Rights Reserved</p>
+    </div>
+  </footer>
 </body>
 </html>
