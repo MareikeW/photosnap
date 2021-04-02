@@ -63,6 +63,11 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* BUTTONS */
 button {
     text-transform: uppercase;
@@ -195,23 +200,6 @@ header {
     }
 }
 
-@media (min-width: 768px) {
-    .hero__section {
-        height: 490px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .hero-feature__image {
-        grid-column-start: 3;
-        grid-column-end: 4;
-    }
-
-    .hero__text {
-        background-color: blue;
-    }
-}
-
 .announcement__section {
     background-image: url("../assets/shared/mobile/bg-beta.jpg");
     background-size: cover;
@@ -230,8 +218,6 @@ header {
         margin-bottom: 24px;  
     }
 }
-
-
 
 
 /* SERVICE SECTION - HOMEPAGE */
@@ -302,7 +288,7 @@ header {
         height: 650px;
     }
  
-   #service__text--top {
+    #service__text--top {
         grid-area: textHero;
         padding: 0;
         margin-top: 173px;
@@ -345,7 +331,6 @@ header {
 
 @media (min-width: 1024px) {
     .service__container {
-        display: grid;
         grid-template-areas: 
         "textHero imgHero"
         "img2 text2"
@@ -354,39 +339,19 @@ header {
     }
 
     .service__container:nth-child(2) {
-        display: grid;
-        grid-template-areas: 
-        "img2 text2";
         grid-auto-columns: 58% 42%;
     }
 
     #service__image--top {
         background-image: url("../assets/home/desktop/create-and-share.jpg");
-        height: 650px;
-        grid-area: imgHero;
-        margin: 0;
     }
 
     #service__image--middle {
         background-image: url("../assets/home/desktop/beautiful-stories.jpg");
-        grid-area: img2;
     }
     
     #service__image--bottom {
         background-image: url("../assets/home/desktop/designed-for-everyone.jpg");
-        grid-area: img3;
-    }
-
-    #service__text--top {
-        grid-area: textHero;
-    }
-
-    #service__text--middle {
-        grid-area: text2;
-    }
-
-    #service__text--bottom {
-        grid-area: text3;
     }
 }
 
@@ -829,18 +794,71 @@ footer {
 }
 
 @media (min-width: 768px) {
-    .hero-features__image {
-        background-image: url("../assets/features/tablet/hero.jpg");
+    .hero-feature__section {
+        display: grid;
+        grid-template-areas: 
+        "textFeature textFeature imgFeature";
+        grid-auto-columns: 1fr 1fr 1fr;
         height: 490px;
+    }
+ 
+    .features-featured__text {
+        grid-area: textFeature;
+        padding: 0;
+        margin-top: 173px;
+        width: 387px;
+        height: 144px;
+        margin-left: 54px;
     }
 
     .features-featured__text {
-        background-color: red;
-        
+        h2 {
+            margin-top: 0;
+        }
+    }
+    
+    .hero-features__image {
+        background-image: url("../assets/features/tablet/hero.jpg");
+        grid-area: imgFeature;
+        margin: 0;
+        height: 490px;
+    }
+
+    .features__section {
+        .features__container {
+            height: 861px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 690px;
+            margin-top: 112px;
+            margin-bottom: 112px;
+        }
+
+        .features {
+            img {
+                margin-top: 0;
+            }
+        }
+
+        .features:nth-child(2) {
+            img {
+                margin-top: 18px;
+            }
+        }
     }
 }
 
+@media (min-width: 1024px) {
+    .hero-feature__section {
+        grid-template-areas: 
+        "textFeature imgFeature";
+        grid-auto-columns: 42% 58%;
+    }
 
+    .hero-features__image {
+        background-image: url("../assets/features/desktop/hero.jpg");
+    }
+}
 
 
 /* PRICING PAGE */
