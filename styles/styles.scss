@@ -219,6 +219,49 @@ header {
     }
 }
 
+@media (min-width: 768px) {
+    .announcement__section {
+        height: 280px;
+        background-image: url("../assets/shared/tablet/bg-beta.jpg");
+        position: relative;
+    }
+
+    .announcement__section {
+        h2 {
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: 4.17px;
+            width: 400px;
+            position: absolute;
+            top: 68px;
+            left: 39px;
+        }
+
+        .invite__button {
+            position: absolute;
+            right: 40px;
+            top: 132px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .announcement__section {
+        .announcement__text {
+            width: 1100px;
+            position: relative;
+        }
+
+        h2 {
+            left: 0;
+        }
+
+        .invite__button {
+            right: 0;
+        }
+    }
+}
+
 
 /* SERVICE SECTION - HOMEPAGE */
 .service__images {
@@ -835,6 +878,10 @@ footer {
         }
 
         .features {
+            width: 339px;
+        }
+
+        .features {
             img {
                 margin-top: 0;
             }
@@ -857,6 +904,36 @@ footer {
 
     .hero-features__image {
         background-image: url("../assets/features/desktop/hero.jpg");
+    }
+
+    .features__section {
+        .features__container {
+            height: 576px;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 1000px;
+        }
+
+        .features {
+            width: 300px;
+        }
+
+        .features:nth-child(2) {
+            img {
+                margin-top: 0px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1150px) {
+    .features__section {
+        .features__container {
+            width: 1100px;
+        } 
+        
+        .features {
+            width: 339px;
+        }
     }
 }
 
