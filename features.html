@@ -12,19 +12,22 @@
 </head>
 <body>
   <header>
-    <img src="./assets/shared/desktop/logo.svg" alt="Logo Photosnap"  class="logo" />
-    <nav>
-      <li>Stories</li>
-      <li>Features</li>
-      <li>Pricing</li>
-    </nav>
+    <div class="header__container">
+      <img src="./assets/shared/desktop/logo.svg" alt="Logo Photosnap"  class="logo" />
+      <!--<nav>
+        <li>Stories</li>
+        <li>Features</li>
+        <li>Pricing</li>
+      </nav>
 
-    <button class="button--black">Get an invite</button>
+      <button class="button--black">Get an invite</button>-->
+      <img class="menu-button" src="./assets/shared/mobile/menu.svg" alt="Navigationmenu">
+    </div>
   </header>
 
   <section class="hero__section">
-      <div class="hero-feature__image"></div>
-      <div class="hero__text featured__text">
+      <div class="hero-feature__image hero-features__image"></div>
+      <div class="hero__text features-featured__text">
         <h2>Features</h2>
         <p>We make sure all of our features are designed to be loved by every aspiring and even 
           professional photograpers who wanted to share their stories.</p>
@@ -97,12 +100,14 @@
         <li><img src="./assets/shared/desktop/pinterest.svg" alt="Pinterest Icon"></li>
         <li><img src="./assets/shared/desktop/instagram.svg" alt="Instagram Icon"></li>
       </ul>
-      <ul class="footer__pages">
-        <li>Home</li>
-        <li>Stories</li>
-        <li>Features</li>
-        <li>Pricing</li>
-      </ul>
+      <nav>
+        <ul class="footer__pages">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./stories.html">Stories</a></li>
+          <li><a href="./features.html">Features</a></li>
+          <li><a href="./pricing.html">Pricing</a></li>
+        </ul>
+      </nav>
 
       <div class="footer__button">
         <button class="button__letter--white">Get an invite</button>

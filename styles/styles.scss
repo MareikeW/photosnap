@@ -143,8 +143,6 @@ header {
     }
 }
 
-
-
 .hero__section {
     background-color: $pure-black;
     color: $pure-white;
@@ -183,7 +181,8 @@ header {
 }
 
 .hero__text {
-    .invite__button {
+    .invite__button,
+    .service__button {
         margin-top: 23px;
     }
 }
@@ -193,6 +192,23 @@ header {
     .hero__text {
         padding-left: 0;
         padding-right: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero__section {
+        height: 490px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .hero-feature__image {
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    .hero__text {
+        background-color: blue;
     }
 }
 
@@ -282,7 +298,7 @@ header {
         height: 600px;
     }
 
-    .hero__section {
+    .service__container:first-child {
         height: 650px;
     }
  
@@ -360,12 +376,24 @@ header {
         background-image: url("../assets/home/desktop/designed-for-everyone.jpg");
         grid-area: img3;
     }
+
+    #service__text--top {
+        grid-area: textHero;
+    }
+
+    #service__text--middle {
+        grid-area: text2;
+    }
+
+    #service__text--bottom {
+        grid-area: text3;
+    }
 }
 
 
 /* STORIES SECTION - HOMEPAGE */
 .index__story,
-.stories_story {
+.stories__story {
     height: 375px;
     width: 375px;
     margin: 0 auto;
@@ -487,7 +515,8 @@ header {
         margin: 0 auto;
     }
 
-    .index__story {
+    .index__story,
+    .stories__story {
         height: 500px;
         width: 100%;
     }
@@ -740,8 +769,13 @@ footer {
     background-size: cover;
 }
 
+.service__button {
+    display: flex;
+    width: 184px;
+    justify-content: space-between;
+}
 
-.stories_story {
+.stories__story {
     .story__text {
         bottom: 60px;
     }
@@ -754,6 +788,26 @@ footer {
     }
 }
 
+@media (min-width: 768px) {
+    .featured__story {
+        background-image: url(../assets/stories/tablet/moon-of-appalacia.jpg);
+        height: 650px;
+        position: relative;
+    }
+
+    .stories-featured__text {
+        position: absolute;
+        top: 194px;
+        left: 39px;
+        padding-top: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .stories-featured__text {
+        left: 112px;
+    }
+}
 
 
 
@@ -764,14 +818,26 @@ footer {
     }
 }
 
-.hero-feature__image {
+.hero-features__image {
     background-image: url("../assets/features/mobile/hero.jpg");
     height: 294px;
     background-size: cover;
 }
 
-.featured__text {
+.features-featured__text {
     height: 300px;
+}
+
+@media (min-width: 768px) {
+    .hero-features__image {
+        background-image: url("../assets/features/tablet/hero.jpg");
+        height: 490px;
+    }
+
+    .features-featured__text {
+        background-color: red;
+        
+    }
 }
 
 

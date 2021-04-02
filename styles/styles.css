@@ -173,7 +173,8 @@ header .menu-button {
   padding-bottom: 48px;
 }
 
-.hero__text .invite__button {
+.hero__text .invite__button,
+.hero__text .service__button {
   margin-top: 23px;
 }
 
@@ -182,6 +183,24 @@ header .menu-button {
   .hero__text {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero__section {
+    height: 490px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .hero-feature__image {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  .hero__text {
+    background-color: blue;
   }
 }
 
@@ -263,7 +282,7 @@ header .menu-button {
     grid-auto-columns: 1fr 1fr 1fr;
     height: 600px;
   }
-  .hero__section {
+  .service__container:first-child {
     height: 650px;
   }
   #service__text--top {
@@ -349,11 +368,26 @@ header .menu-button {
     -ms-grid-column: 2;
     grid-area: img3;
   }
+  #service__text--top {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: textHero;
+  }
+  #service__text--middle {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: text2;
+  }
+  #service__text--bottom {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: text3;
+  }
 }
 
 /* STORIES SECTION - HOMEPAGE */
 .index__story,
-.stories_story {
+.stories__story {
   height: 375px;
   width: 375px;
   margin: 0 auto;
@@ -478,7 +512,8 @@ header .menu-button {
     width: 720px;
     margin: 0 auto;
   }
-  .index__story {
+  .index__story,
+  .stories__story {
     height: 500px;
     width: 100%;
   }
@@ -708,15 +743,45 @@ footer p {
   background-size: cover;
 }
 
-.stories_story .story__text {
+.service__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 184px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.stories__story .story__text {
   bottom: 60px;
 }
 
-.stories_story h3 {
+.stories__story h3 {
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 0;
   font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .featured__story {
+    background-image: url(../assets/stories/tablet/moon-of-appalacia.jpg);
+    height: 650px;
+    position: relative;
+  }
+  .stories-featured__text {
+    position: absolute;
+    top: 194px;
+    left: 39px;
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .stories-featured__text {
+    left: 112px;
+  }
 }
 
 /* FEATURES PAGE */
@@ -724,14 +789,24 @@ footer p {
   height: 1675px;
 }
 
-.hero-feature__image {
+.hero-features__image {
   background-image: url("../assets/features/mobile/hero.jpg");
   height: 294px;
   background-size: cover;
 }
 
-.featured__text {
+.features-featured__text {
   height: 300px;
+}
+
+@media (min-width: 768px) {
+  .hero-features__image {
+    background-image: url("../assets/features/tablet/hero.jpg");
+    height: 490px;
+  }
+  .features-featured__text {
+    background-color: red;
+  }
 }
 
 /* PRICING PAGE */
