@@ -897,6 +897,10 @@ footer p {
   line-height: 25px;
 }
 
+#yearly {
+  opacity: 0.5;
+}
+
 .toggle {
   position: relative;
   display: inline-block;
@@ -1024,6 +1028,63 @@ input:checked + .slider::before {
 
 .pick-plan__button {
   margin: 40px auto;
+}
+
+.features-comparison--table {
+  width: 318px;
+  margin: 0 auto;
+}
+
+.features-comparison--table h3 {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: auto;
+  text-align: left;
+  text-transform: uppercase;
+  border-bottom: solid black 1px;
+  padding-bottom: 20px;
+}
+
+.features-comparison--table h4 {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  line-height: auto;
+  padding-top: 23px;
+}
+
+.features-comparison--table p {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: upper;
+  letter-spacing: 1.67px;
+  line-height: auto;
+  opacity: 0.5;
+}
+
+.features-comparison--table img {
+  height: 12px;
+  width: 16px;
+}
+
+.features-comparison--table .subscriptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+  width: 272px;
+  text-transform: uppercase;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.features-comparison--table .comparison--card {
+  border-bottom: solid 1px #dfdfdf;
 }
 
 @media (min-width: 768px) {

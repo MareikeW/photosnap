@@ -99,21 +99,142 @@
   </section>
 
   <!--Compare-->
+  <section class="features-comparison--table">
+    <h3>The Features</h3>
+    <div class="comparison--card">
+      <h4>Unlimited Story Posting</h4>
+      <div class="subscriptions">
+        <div class="subscription-type">
+          <p>Basic</p>
+          <img src="./assets/pricing/desktop/check.svg" alt="Check">
+        </div>
+        <div class="subscription-type">
+          <p>Pro</p>
+          <img src="./assets/pricing/desktop/check.svg" alt="Check">
+        </div>
+        <div class="subscription-type">
+          <p>Business</p>
+          <img src="./assets/pricing/desktop/check.svg" alt="Check">
+        </div>
+      </div>
+    </div>
 
-  The Features
+    <div class="comparison--card">
+      <h4>Unlimited Photo Upload</h4>
+      <div class="subscriptions">
+        <div class="subscription-type">
+          <p>Basic</p>
+          <img src="./assets/pricing/desktop/check.svg" alt="Check">
+        </div>
+        <div class="subscription-type">
+          <p>Pro</p>
+          <img src="./assets/pricing/desktop/check.svg" alt="Check">
+        </div>
+        <div class="subscription-type">
+          <p>Business</p>
+          <img src="./assets/pricing/desktop/check.svg" alt="Check">
+        </div>
+      </div>
+    </div>
 
-  Basic
-  Pro
-  Business
+    <div class="comparison--card">
+      <h4>Embedding Custom Content</h4>
+      <div class="subscriptions">
+        <div class="subscription-type">
+          <p>Basic</p>
+        </div>
+        <div class="subscription-type">
+          <p>Pro</p>
+          <img src="./assets/pricing/desktop/check.svg" alt="Check">
+        </div>
+        <div class="subscription-type">
+          <p>Business</p>
+          <img src="./assets/pricing/desktop/check.svg" alt="Check">
+        </div>
+      </div>
+    </div>
 
-  Unlimited Story Posting
-  Unlimited Photo Upload
-  Embedding Custom Content
-  Customize Metadata
-  Advanced Metrics
-  Photo Downloads
-  Search Engine Indexing
-  Custom Analytics
+    <div class="comparison--card">
+      <h4>Customize Metadata</h4>
+      <div class="subscriptions">
+        <div class="subscription-type">
+          <p>Basic</p>
+        </div>
+        <div class="subscription-type">
+          <p>Pro</p>
+          <img src="./assets/pricing/desktop/check.svg" alt="Check">
+        </div>
+        <div class="subscription-type">
+          <p>Business</p>
+          <img src="./assets/pricing/desktop/check.svg" alt="Check">
+        </div>
+      </div>
+    </div>
+
+    <div class="comparison--card">
+      <h4>Advanced Metrics</h4>
+      <div class="subscriptions">
+        <div class="subscription-type">
+          <p>Basic</p>
+        </div>
+        <div class="subscription-type">
+          <p>Pro</p>
+        </div>
+        <div class="subscription-type">
+          <p>Business</p>
+          <img src="./assets/pricing/desktop/check.svg" alt="Check">
+        </div>
+      </div>
+    </div>
+
+    <div class="comparison--card">
+      <h4>Photo Downloads</h4>
+      <div class="subscriptions">
+        <div class="subscription-type">
+          <p>Basic</p>
+        </div>
+        <div class="subscription-type">
+          <p>Pro</p>
+        </div>
+        <div class="subscription-type">
+          <p>Business</p>
+          <img src="./assets/pricing/desktop/check.svg" alt="Check">
+        </div>
+      </div>
+    </div>
+
+    <div class="comparison--card">
+      <h4>Search Engine Indexing</h4>
+      <div class="subscriptions">
+        <div class="subscription-type">
+          <p>Basic</p>
+        </div>
+        <div class="subscription-type">
+          <p>Pro</p>
+        </div>
+        <div class="subscription-type">
+          <p>Business</p>
+          <img src="./assets/pricing/desktop/check.svg" alt="Check">
+        </div>
+      </div>
+    </div>
+
+    <div class="comparison--card">
+      <h4>Custom Analytics</h4>
+      <div class="subscriptions">
+        <div class="subscription-type">
+          <p>Basic</p>
+        </div>
+        <div class="subscription-type">
+          <p>Pro</p>
+        </div>
+        <div class="subscription-type">
+          <p>Business</p>
+          <img src="./assets/pricing/desktop/check.svg" alt="Check">
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="announcement__section">
     <div class="announcement__text">
@@ -155,6 +276,8 @@
   <script>
     function switchPricingTerm() {
       let checkBox = document.getElementById("checkbox");
+      let monthly = document.getElementById("monthly");
+      let yearly = document.getElementById("yearly");
       let monthlyPrices = document.getElementsByClassName("prices--month");
       let yearlyPrices = document.getElementsByClassName("prices--year");
       let monthlyTexts = document.getElementsByClassName("texts--month");
@@ -166,11 +289,15 @@
           monthlyTexts[i].style.display = "none";
           yearlyPrices[i].style.display = "block";
           yearlyTexts[i].style.display = "block";
+          monthly.style.opacity = 0.5;
+          yearly.style.opacity = 1;
         } else if (checkBox.checked === false) {
           monthlyPrices[i].style.display = "block";
           monthlyTexts[i].style.display = "block";
           yearlyPrices[i].style.display = "none";
           yearlyTexts[i].style.display = "none";
+          yearly.style.opacity = 0.5;
+          monthly.style.opacity = 1;
       }
     }
   }
