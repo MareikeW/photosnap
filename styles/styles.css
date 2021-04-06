@@ -727,6 +727,82 @@ footer p {
   color: white;
 }
 
+@media (min-width: 768px) {
+  footer {
+    height: 284px;
+    text-align: unset;
+  }
+  footer .footer__container {
+    height: 156px;
+    position: relative;
+    width: unset;
+  }
+  footer .footer__container .footer__pages {
+    width: 315px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 16px;
+    position: absolute;
+    left: 39px;
+    top: 64px;
+  }
+  footer .footer__container #logo--white {
+    position: absolute;
+    left: 39px;
+    top: 64px;
+  }
+  footer .footer__container .footer__button {
+    padding: 0;
+    position: absolute;
+    top: 64px;
+    right: 39px;
+  }
+  footer .footer__container p {
+    position: absolute;
+    right: 39px;
+    top: 200px;
+  }
+  footer .footer__container .footer__icons {
+    position: absolute;
+    left: 39px;
+    top: 170px;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer {
+    height: 284px;
+    text-align: unset;
+  }
+  footer .footer__container {
+    height: 122px;
+    width: 1000px;
+  }
+  footer .footer__container .footer__pages {
+    left: 0;
+  }
+  footer .footer__container #logo--white {
+    left: 0;
+  }
+  footer .footer__container .footer__button {
+    right: 0;
+  }
+  footer .footer__container p {
+    right: 0;
+  }
+  footer .footer__container .footer__icons {
+    left: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  footer .footer__container {
+    width: 1104px;
+  }
+}
+
 /* STORIES PAGE */
 .featured__story {
   background-image: url("../assets/stories/mobile/moon-of-appalacia.jpg");
@@ -1033,6 +1109,11 @@ input:checked + .slider::before {
 .features-comparison--table {
   width: 318px;
   margin: 0 auto;
+  margin-bottom: 64px;
+}
+
+.features-comparison--table h2 {
+  display: none;
 }
 
 .features-comparison--table h3 {
@@ -1058,7 +1139,7 @@ input:checked + .slider::before {
 .features-comparison--table p {
   font-size: 10px;
   font-weight: 700;
-  text-transform: upper;
+  text-transform: uppercase;
   letter-spacing: 1.67px;
   line-height: auto;
   opacity: 0.5;
@@ -1083,8 +1164,12 @@ input:checked + .slider::before {
   margin-bottom: 16px;
 }
 
-.features-comparison--table .comparison--card {
+.features-comparison--table .comparison__card {
   border-bottom: solid 1px #dfdfdf;
+}
+
+.features-comparison--table .comparison__headings p {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -1163,6 +1248,68 @@ input:checked + .slider::before {
     margin: 0;
     padding-bottom: 20px;
   }
+  .features-comparison--table {
+    width: 689px;
+    margin-bottom: 112px;
+  }
+  .features-comparison--table h2 {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 64px;
+  }
+  .features-comparison--table h3 {
+    text-align: left;
+    border: none;
+    padding-bottom: 0;
+    padding-left: 24px;
+  }
+  .features-comparison--table h4 {
+    padding-top: 23px;
+    padding-left: 24px;
+    padding-bottom: 23.5px;
+  }
+  .features-comparison--table p {
+    opacity: 1;
+  }
+  .features-comparison--table .comparison__card--content {
+    width: 622px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+  }
+  .features-comparison--table .subscription-type p {
+    display: none;
+  }
+  .features-comparison--table .subscription-type .basic {
+    position: absolute;
+    left: 320px;
+    top: 23px;
+  }
+  .features-comparison--table .subscription-type .pro {
+    position: absolute;
+    top: 23px;
+    left: 465px;
+  }
+  .features-comparison--table .comparison__headings {
+    border-bottom: solid black 1px;
+    padding-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .features-comparison--table .comparison__headings p {
+    display: inline-block;
+    width: 140px;
+    text-align: center;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1219,6 +1366,24 @@ input:checked + .slider::before {
   .texts--year,
   .texts--month {
     padding-right: 0;
+  }
+  .features-comparison--table {
+    width: 731px;
+    margin-bottom: 160px;
+  }
+  .features-comparison--table .comparison__card--content {
+    width: 645px;
+  }
+  .features-comparison--table .subscription-type .basic {
+    left: 365px;
+  }
+  .features-comparison--table .subscription-type .pro {
+    left: 510px;
+  }
+  .features-comparison--table .subscription-type .business {
+    position: absolute;
+    top: 23px;
+    left: 650px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

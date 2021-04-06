@@ -723,7 +723,6 @@ footer {
         width: 310px;
         padding-top: 56px;
         margin: 0 auto;
-        
     }
 
     .footer__icons,
@@ -763,6 +762,101 @@ footer {
     p {
         opacity: 0.6;
         color: $pure-white;
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        height: 284px;
+        text-align: unset;
+    }
+
+    footer {
+        .footer__container {
+            height: 156px;
+            position: relative;
+            width: unset;
+        }
+
+        .footer__container {
+            .footer__pages {
+                width: 315px;
+                flex-direction: row;
+                height: 16px;
+                position: absolute;
+                left: 39px;
+                top: 64px;
+            }
+
+            #logo--white {
+                position: absolute;
+                left: 39px;
+                top: 64px;
+            }
+
+            .footer__button {
+                padding: 0;
+                position: absolute;
+                top: 64px;
+                right: 39px;
+            }
+
+            p {
+               position: absolute;
+               right: 39px;
+               top: 200px;
+            }
+
+            .footer__icons {
+                position: absolute;
+                left: 39px;
+                top: 170px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    footer {
+        height: 284px;
+        text-align: unset;
+    }
+
+    footer {
+        .footer__container {
+            height: 122px;
+            width: 1000px;
+        }
+
+        .footer__container {
+            .footer__pages {
+                left: 0;
+            }
+
+            #logo--white {
+                left: 0;
+            }
+
+            .footer__button {
+                right: 0;
+            }
+
+            p {
+               right: 0;
+            }
+
+            .footer__icons {
+                left: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 1150px) {
+    footer {
+        .footer__container {
+            width: 1104px;
+        }   
     }
 }
 
@@ -1030,7 +1124,6 @@ input:checked + .slider::before {
     display: none;
 }
 
-
 .pricing__cards {
     height: 407px;
     text-align: center;
@@ -1094,9 +1187,14 @@ input:checked + .slider::before {
 .features-comparison--table {
     width: 318px;
     margin: 0 auto;
+    margin-bottom: 64px;
 }
 
 .features-comparison--table {
+    h2 {
+        display: none;
+    }
+
     h3 {
         font-size: 12px;
         font-weight: $font-bold;
@@ -1120,7 +1218,7 @@ input:checked + .slider::before {
     p {
         font-size: 10px;
         font-weight: $font-bold;
-        text-transform: upper;
+        text-transform: uppercase;
         letter-spacing: 1.67px;
         line-height: auto;
         opacity: 0.5;
@@ -1141,9 +1239,14 @@ input:checked + .slider::before {
         margin-bottom: 16px;
     }
 
-    .comparison--card {
-        border-bottom: solid 1px $light-grey;
-        
+    .comparison__card {
+        border-bottom: solid 1px $light-grey;  
+    }
+
+    .comparison__headings {
+        p {
+            display: none;
+        }
     }
 }
 
@@ -1227,6 +1330,77 @@ input:checked + .slider::before {
         margin: 0;
         padding-bottom: 20px;
     }
+
+    .features-comparison--table {
+        width: 689px;
+        margin-bottom: 112px;
+    }
+    
+    .features-comparison--table {
+        h2 {
+            display: block;
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 64px;
+        }
+
+        h3 {
+            text-align: left;
+            border: none;
+            padding-bottom: 0;
+            padding-left: 24px;
+        }
+    
+        h4 {
+            padding-top: 23px;
+            padding-left: 24px;
+            padding-bottom: 23.5px;
+        }
+    
+        p {
+            opacity: 1;
+        }
+
+        .comparison__card--content {
+            width: 622px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .subscription-type {
+            p {
+                display: none;
+            }
+
+            .basic {
+                position: absolute;
+                left: 320px;
+                top: 23px;
+            }
+
+            .pro {
+                position: absolute;
+                top: 23px;
+                left: 465px;
+            }
+        }
+
+        .comparison__headings {
+            border-bottom: solid $pure-black 1px;
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .comparison__headings {
+            p {
+                display: inline-block;
+                width: 140px;
+                text-align: center;
+            }
+        }
+    }
 }
 
 @media (min-width: 1024px) {
@@ -1286,5 +1460,32 @@ input:checked + .slider::before {
     .texts--year,
     .texts--month {
         padding-right: 0;
+    }
+
+    .features-comparison--table {
+        width: 731px;
+        margin-bottom: 160px;
+    }
+
+    .features-comparison--table {
+        .comparison__card--content {
+            width: 645px;
+        }
+
+        .subscription-type {
+            .basic {
+                left: 365px;
+            }
+
+            .pro {
+                left: 510px;
+            }
+
+            .business {
+                position: absolute;
+                top: 23px;
+                left: 650px;
+            }
+        }
     }
 }
