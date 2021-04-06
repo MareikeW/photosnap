@@ -11,18 +11,24 @@
   <title>Photosnap Home</title>
 </head>
 <body>
-  <header>
-    <div class="header__container">
+  <header class="header">
+    <div class="header__container navigation--open">
       <img src="./assets/shared/desktop/logo.svg" alt="Logo Photosnap"  class="logo" />
-      <!--<nav>
-        <li>Stories</li>
-        <li>Features</li>
-        <li>Pricing</li>
-      </nav>
-
-      <button class="button--black">Get an invite</button>-->
-      <img class="menu-button" src="./assets/shared/mobile/menu.svg" alt="Navigationmenu">
+      <img class="menu--toggle" id="menu--open" src="./assets/shared/mobile/menu.svg" alt="Open navigation menu.">
     </div>
+    <nav class="navigation">
+      <div class="header__container navigation--close">
+        <a href="./index.html"><img src="./assets/shared/desktop/logo.svg" alt="Logo Photosnap"  class="logo" /></a>
+        <img class="menu--toggle" id="menu--close" src="./assets/shared/mobile/close.svg" alt="Close navigation menu."> 
+      </div>
+      <ul class="header__pages">
+        <li><a href="./stories.html">Stories</a></li>
+        <li><a href="./features.html">Features</a></li>
+        <li id="pricing-page__link"><a href="./pricing.html">Pricing</a></li>
+      </ul>
+
+      <button class="button--black">Get an invite</button>
+    </nav>    
   </header>
 
   <section class="service__section">
@@ -168,5 +174,29 @@
       <p>Copyright 2019. All Rights Reserved</p>
     </div>
   </footer>
+  <script>
+    const openMenu = document.getElementById("menu--open");
+    const closeMenu = document.getElementById("menu--close");
+    const navigation = document.getElementsByClassName("navigation");
+    const closeNavigationModal = document.getElementsByClassName("navigation--close");
+    const openNavigationModal = document.getElementsByClassName("navigation--open")
+
+    openMenu.addEventListener("click", toggleNav);
+    closeMenu.addEventListener("click", toggleNav);
+
+    function toggleNav() {
+      navigation[0].style.display === "block" ? closeNav() : openNav();
+    }
+
+    function openNav() {
+      navigation[0].style.display = "block";
+      openNavigationModal[0].style.display = "none";
+    }
+
+    function closeNav() {
+      navigation[0].style.display = "none";
+      openNavigationModal[0].style.display = "flex";
+    }
+  </script>
 </body>
 </html>
