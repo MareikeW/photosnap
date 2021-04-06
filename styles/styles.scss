@@ -1246,11 +1246,12 @@ input:checked + .slider::before {
 
 .pricing-cards__container {
     margin: 40px auto;
-    width: 318px;
     height: 1269px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .prices--year,
@@ -1280,7 +1281,7 @@ input:checked + .slider::before {
     margin: 0 auto;
     margin-top: 56px;
     margin-bottom: 40px;
-    width: 275px;
+    max-width: 275px;
 }
 
 .pricing-card__text {
@@ -1318,19 +1319,17 @@ input:checked + .slider::before {
     margin: 40px auto;
 }
 
+.pick-plan__button {
+    .button--black {
+        width: 200px;
+    }
+}
+
 .features-comparison--table {
-    width: 318px;
     margin: 0 auto;
     margin-bottom: 64px;
     padding-left: 10px;
     padding-right: 10px;
-}
-
-@media (min-width: 350px) {
-    .features-comparison--table {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
 }
 
 .features-comparison--table {
@@ -1376,7 +1375,6 @@ input:checked + .slider::before {
         display: flex;
         justify-content: space-between;
         text-align: left;
-        width: 272px;
         text-transform: uppercase;
         margin-top: 16px;
         margin-bottom: 16px;
@@ -1390,6 +1388,36 @@ input:checked + .slider::before {
         p {
             display: none;
         }
+    }
+}
+
+@media (min-width: 350px) {
+    .features-comparison--table {
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 318px;
+    }
+
+    .pricing-cards__container {
+        width: 318px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .pick-plan__button {
+        .button--black {
+            width: 245px;
+        }
+    }
+
+    .subscriptions {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        width: 272px;
+        text-transform: uppercase;
+        margin-top: 16px;
+        margin-bottom: 16px;
     }
 }
 
