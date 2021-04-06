@@ -111,7 +111,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 168px;
+  max-width: 168px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -364,7 +364,6 @@ footer {
 
 footer .footer__container {
   height: 427px;
-  max-width: 310px;
   padding-top: 56px;
   margin: 0 auto;
 }
@@ -719,7 +718,7 @@ footer p {
 
 .story__text {
   color: white;
-  width: 310px;
+  width: 80%;
   height: 99px;
   position: absolute;
   bottom: 40px;
@@ -835,10 +834,10 @@ footer p {
 
 /* FEATURES LISTING - HOMEPAGE */
 .features__container {
-  max-width: 310px;
   height: 802px;
   margin: 80px auto;
   text-align: center;
+  padding: 0 10px;
 }
 
 .features img {
@@ -861,6 +860,13 @@ footer p {
 
 .features p {
   opacity: 0.6;
+}
+
+@media (min-width: 310px) {
+  .features__container {
+    width: 310px;
+    padding: 0;
+  }
 }
 
 @media (min-width: 768px) {
@@ -965,7 +971,8 @@ footer p {
 
 /* FEATURES PAGE */
 .features__section .features__container {
-  height: 1675px;
+  height: 1900px;
+  padding: 0 20px;
 }
 
 .hero-features__image {
@@ -976,6 +983,20 @@ footer p {
 
 .features-featured__text {
   height: 300px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media (min-width: 310px) {
+  .features-featured__text {
+    height: 300px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .features__section .features__container {
+    height: 1675px;
+    padding: 0;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1145,7 +1166,7 @@ input:checked + .slider::before {
 
 .pricing-cards__container {
   margin: 40px auto;
-  max-width: 318px;
+  width: 318px;
   height: 1269px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1219,9 +1240,18 @@ input:checked + .slider::before {
 }
 
 .features-comparison--table {
-  max-width: 318px;
+  width: 318px;
   margin: 0 auto;
   margin-bottom: 64px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (min-width: 350px) {
+  .features-comparison--table {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 .features-comparison--table h2 {
