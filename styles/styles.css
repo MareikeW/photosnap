@@ -662,6 +662,8 @@ footer p {
   max-width: 375px;
   margin: 0 auto;
   position: relative;
+  -webkit-transition: margin-top 1s;
+  transition: margin-top 1s;
 }
 
 .index__story::before,
@@ -679,7 +681,7 @@ footer p {
 .index__story:focus,
 .stories__story:hover,
 .stories__story:focus {
-  top: -24px;
+  margin-top: -24px;
 }
 
 #story--first {
