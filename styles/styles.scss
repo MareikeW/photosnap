@@ -66,6 +66,13 @@ a {
 }
 
 /* BUTTONS */
+button,
+a,
+.footer__icons,
+.stories__story {
+    cursor: pointer;
+}
+
 button {
     text-transform: uppercase;
     border: none;
@@ -126,6 +133,13 @@ button {
 
 /* GENERAL LAYOUT */
 /* HEADER */
+.header__pages,
+.footer__pages {
+    li:hover {
+        color: $light-grey
+    }
+}
+
 header {
     height: 72px;
     width: 100%;
@@ -165,6 +179,7 @@ header {
     font-size: 15px;
     line-height: auto;
     letter-spacing: 2.5px;
+    font-weight: $font-bold;
 }
 
 .header__pages {
@@ -389,9 +404,21 @@ footer {
         margin: 0 auto;
     }
 
-    .footer__icons,
     #logo--white {
         filter: brightness(0) invert(1);
+    }
+
+    .footer__icons {
+        li {
+            filter: brightness(0) invert(1);
+        }
+    }
+
+    .footer__icons {
+        li:hover,
+        li:focus {
+            filter: unset;
+        }
     }
 
     .footer__icons {
@@ -679,6 +706,13 @@ footer {
     bottom: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.3);
+}
+
+.index__story:hover,
+.index__story:focus,
+.stories__story:hover,
+.stories__story:focus {
+    top: -24px;
 }
 
 #story--first {
